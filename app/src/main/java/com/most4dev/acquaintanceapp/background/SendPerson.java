@@ -34,7 +34,6 @@ public class SendPerson extends AsyncTask<Map<String, String>, Void, String> {
         try {
             RequestListTheme clientForecast = new RequestListTheme();
             responseCode = clientForecast.run(
-                    Config.sendPerson
             );
         } catch (IOException e) {
             e.printStackTrace();
@@ -51,9 +50,9 @@ public class SendPerson extends AsyncTask<Map<String, String>, Void, String> {
     public class RequestListTheme {
         OkHttpClient okHttpClient = new OkHttpClient();
 
-        String run(String url) throws IOException {
+        String run() throws IOException {
             Request request = new Request.Builder()
-                    .url(url)
+                    .url(Config.sendPerson)
                     .post(postData())
                     .build();
             try (Response response = okHttpClient.newCall(request).execute()) {

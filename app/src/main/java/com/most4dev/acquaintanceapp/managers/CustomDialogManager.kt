@@ -2,10 +2,7 @@ package com.most4dev.acquaintanceapp.managers
 
 import android.app.DatePickerDialog
 import android.content.Context
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import com.most4dev.acquaintanceapp.R
 import java.util.*
 

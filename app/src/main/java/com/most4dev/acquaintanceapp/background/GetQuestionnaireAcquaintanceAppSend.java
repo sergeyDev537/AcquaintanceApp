@@ -25,11 +25,6 @@ public class GetQuestionnaireAcquaintanceAppSend extends AsyncTask<Map<String, S
         this.message = message;
     }
 
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-    }
-
 
     @SafeVarargs
     @Override

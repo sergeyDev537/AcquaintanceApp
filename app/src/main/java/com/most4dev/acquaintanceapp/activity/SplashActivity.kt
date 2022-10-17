@@ -1,5 +1,6 @@
 package com.most4dev.acquaintanceapp.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.most4dev.acquaintanceapp.viewModels.AcquaintanceViewModel
 
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var acquaintanceViewModel: AcquaintanceViewModel
@@ -62,6 +64,7 @@ class SplashActivity : AppCompatActivity() {
                 )
             )
         }
+        finish()
     }
 
 }
