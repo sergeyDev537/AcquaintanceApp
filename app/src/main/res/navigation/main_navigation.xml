@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/listQuestionnaire">
+
+    <fragment
+        android:id="@+id/listQuestionnaire"
+        android:name="com.most4dev.acquaintanceapp.fragments.ListQuestionnaireFragment"
+        android:label="fragment_questionnaire"
+        tools:layout="@layout/fragment_list_questionnaire">
+        <action
+            android:id="@+id/action_listQuestionnaire_to_detailQuestionnaireFragment"
+            app:destination="@id/detailQuestionnaireFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailQuestionnaireFragment"
+        android:name="com.most4dev.acquaintanceapp.fragments.DetailQuestionnaireFragment"
+        android:label="fragment_detail_questionnaire"
+        tools:layout="@layout/fragment_detail_questionnaire">
+    </fragment>
+
+</navigation>

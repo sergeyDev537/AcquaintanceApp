@@ -28,10 +28,24 @@
     <string name="checkBox_checked">Checkbox is not checked</string>
     <string name="photo_not_selected">No photo selected</string>
 
-    <!--Perrmissions-->
+    <!--Permissions-->
     <string name="need_permission">Need permission(s)</string>
     <string name="some_permissions">Some permissions are required to do the task.</string>
     <string name="should_show_explanation">Should show an explanation.</string>
     <string name="permission_denied">Permission denied, show more info!</string>
+
+    <!--FAB ITEM-->
+    <string name="fab_info">Terms of Conditions</string>
+    <string name="fab_send">Complain review</string>
+
+    <!--QUESTIONNAIRE-->
+    <string name="age">Age</string>
+    <string name="description">Description</string>
+    <string name="send_message">Send message</string>
+    <string name="send_like">Your like has been sent</string>
+    <string name="send_star">Your star has been sent</string>
+
+    <!--OTHER-->
+    <string name="content_description">content description</string>
 
 </resources>
