@@ -52,7 +52,6 @@ public class GetQuestionnaireAppDrop extends AsyncTask<Map<String, String>, Void
         try {
             RequestListTheme clientForecast = new RequestListTheme();
             responseCode = clientForecast.run(
-                    Config.registrationURL
             );
         } catch (IOException e) {
             e.printStackTrace();
@@ -83,9 +82,9 @@ public class GetQuestionnaireAppDrop extends AsyncTask<Map<String, String>, Void
     public class RequestListTheme {
         OkHttpClient okHttpClient = new OkHttpClient();
 
-        String run(String url) throws IOException {
+        String run() throws IOException {
             Request request = new Request.Builder()
-                    .url(url)
+                    .url(Config.registrationURL)
                     .post(postData())
                     .build();
             try (Response response = okHttpClient.newCall(request).execute()) {

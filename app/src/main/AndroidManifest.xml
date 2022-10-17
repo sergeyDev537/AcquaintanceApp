@@ -16,7 +16,7 @@
         android:theme="@style/Theme.AcquaintanceApp"
         tools:targetApi="31">
         <activity
-            android:name=".WebViewActivity"
+            android:name=".activity.WebViewActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

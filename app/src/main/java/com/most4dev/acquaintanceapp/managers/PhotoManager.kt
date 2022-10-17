@@ -14,6 +14,7 @@ import android.util.Base64
 import java.io.ByteArrayOutputStream
 import android.content.Context
 
+@Suppress("BooleanMethodIsAlwaysInverted", "SameParameterValue")
 class PhotoManager {
 
     companion object {

@@ -5,7 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import com.most4dev.acquaintanceapp.Config
 import com.most4dev.acquaintanceapp.R
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,7 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        navController = findNavController(R.id.nav_host)
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+        navController = navHostFragment.navController
 
         fabPrivacy.setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(Config.termsURL))

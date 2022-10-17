@@ -7,12 +7,12 @@ import com.most4dev.acquaintanceapp.models.ChatUserModel
 import com.most4dev.acquaintanceapp.models.PersonModel
 import com.google.gson.Gson
 
-class SharedPreferenceManager {
+class SharedPreferenceManager(context: Context) {
 
     private var sharedPreferences: SharedPreferences
     private var editorSharedPreferences: SharedPreferences.Editor
 
-    constructor(context: Context){
+    init {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
         editorSharedPreferences = sharedPreferences.edit()
         editorSharedPreferences.apply()

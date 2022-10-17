@@ -31,7 +31,7 @@ class DetailQuestionnaireFragment : Fragment() {
         }
 
         appCompatButtonOpenChat.setOnClickListener {
-            var bundle = Bundle()
+            val bundle = Bundle()
             bundle.putSerializable(
                 "QuestionnaireModelChat",
                 requireArguments().getSerializable("QuestionnaireModelItem") as QuestionnaireModel
