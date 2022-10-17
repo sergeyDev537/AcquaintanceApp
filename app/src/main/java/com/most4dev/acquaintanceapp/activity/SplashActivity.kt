@@ -41,7 +41,12 @@ class SplashActivity : AppCompatActivity() {
             })
         }
         else{
-
+            startActivity(
+                Intent(
+                    this,
+                    RegistrationActivity::class.java
+                )
+            )
         }
     }
 
