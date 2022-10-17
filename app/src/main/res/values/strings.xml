@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">AcquaintanceApp</string>
+
+    <!--REGISTRATION-->
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="name">Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="register">Register</string>
+    <string name="agree_terms_condition">I agree to the </string>
+    <string name="terms_condition">Terms of Conditions</string>
+    <string name="about_you">About you</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_gallery">Chose from gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_photo">Add photo</string>
+    <string name="enter_valid_data">Enter valid data</string>
+    <string name="age_of_coming">You are under 18, return to the program when you are 18 or older</string>
+    <string name="more_4">more 4 symbols</string>
+    <string name="more_70">more 30 symbols</string>
+
+    <!--ENTER VALID DATA-->
+    <string name="name_empty">Name is empty</string>
+    <string name="name_length">Name less than 10 characters</string>
+    <string name="birthday_empty">Birthday is empty</string>
+    <string name="about_empty">About is empty</string>
+    <string name="about_length">About less than 10 characters</string>
+    <string name="checkBox_checked">Checkbox is not checked</string>
+    <string name="photo_not_selected">No photo selected</string>
+
+    <!--Perrmissions-->
+    <string name="need_permission">Need permission(s)</string>
+    <string name="some_permissions">Some permissions are required to do the task.</string>
+    <string name="should_show_explanation">Should show an explanation.</string>
+    <string name="permission_denied">Permission denied, show more info!</string>
+
 </resources>
