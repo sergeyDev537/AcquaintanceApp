@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">AcquaintanceApp</string>
+
+    <!--REGISTRATION-->
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="name">Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="register">Register</string>
+    <string name="agree_terms_condition">I agree to the </string>
+    <string name="terms_condition">Terms of Conditions</string>
+    <string name="about_you">About you</string>
+    <string name="enter_valid_data">Enter valid data</string>
+    <string name="age_of_coming">You are under 18, return to the program when you are 18 or older</string>
+    <string name="more_4">more 4 symbols</string>
+    <string name="more_70">more 30 symbols</string>
+
+    <!--ENTER VALID DATA-->
+    <string name="name_empty">Name is empty</string>
+    <string name="name_length">Name less than 10 characters</string>
+    <string name="birthday_empty">Birthday is empty</string>
+    <string name="about_empty">About is empty</string>
+    <string name="about_length">About less than 10 characters</string>
+    <string name="checkBox_checked">Checkbox is not checked</string>
+    <string name="photo_not_selected">No photo selected</string>
+
+    <!--Permissions-->
+    <string name="permission_denied">Permission denied, show more info!</string>
+
+    <!--FAB ITEM-->
+    <string name="fab_info">Terms of Conditions</string>
+    <string name="fab_send">Complain review</string>
+
+    <!--QUESTIONNAIRE-->
+    <string name="age">Age</string>
+    <string name="description">Description</string>
+    <string name="send_message">Send message</string>
+    <string name="send_like">Your like has been sent</string>
+    <string name="send_star">Your star has been sent</string>
+
+    <!--CHAT-->
+    <string name="three_message">Please check back later, your account is under moderation</string>
+
+    <!--SEND COMPLAINT-->
+    <string name="theme">Theme</string>
+    <string name="message">Message</string>
+    <string name="send_mess_complaint">Your message has been sent</string>
+
+    <!--OTHER-->
+    <string name="content_description">content description</string>
+
 </resources>
