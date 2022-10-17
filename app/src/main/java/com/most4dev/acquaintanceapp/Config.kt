@@ -9,6 +9,7 @@ class Config {
         const val registrationURL = "https://dating-usa-meeting.com/base/go.php"
         const val termsURL = "https://dating-usa-meeting.com/base/privacy-policy.php"
         const val webViewURL = "https://dating-usa-meeting.com/base/opendoor.php"
+        const val sendAbuse = "https://dating-usa-meeting.com/base/abuse.php"
 
     }
 

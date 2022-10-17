@@ -48,6 +48,11 @@
     <!--CHAT-->
     <string name="three_message">Please check back later, your account is under moderation</string>
 
+    <!--SEND COMPLAINT-->
+    <string name="theme">Theme</string>
+    <string name="message">Message</string>
+    <string name="send_mess_complaint">Your message has been sent</string>
+
     <!--OTHER-->
     <string name="content_description">content description</string>
 
