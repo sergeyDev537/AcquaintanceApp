@@ -90,9 +90,15 @@ class RegistrationActivity : AppCompatActivity() {
                     )
                     sharedPreferenceManager.setCompleteRegister(true)
                     acquaintanceViewModel.sendPerson(personModel)
-                    acquaintanceViewModel.getWebViewLoad().observe(this, {
+                    acquaintanceViewModel.getWebViewLoad().observe(this) {
                         if (!it) {
-                            //TODO start activity
+                            startActivity(
+                                Intent(
+                                    this,
+                                    WebViewActivity::class.java
+                                )
+                            )
+                            finish()
                         } else {
                             startActivity(
                                 Intent(
@@ -102,7 +108,7 @@ class RegistrationActivity : AppCompatActivity() {
                             )
                             finish()
                         }
-                    })
+                    }
 
                 } else {
                     sharedPreferenceManager.setAgeOfComing(false)
