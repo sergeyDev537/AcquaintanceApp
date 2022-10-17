@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.most4dev.acquaintanceapp.R
+import com.most4dev.acquaintanceapp.activity.MainActivity
 import com.most4dev.acquaintanceapp.models.QuestionnaireModel
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_detail_questionnaire.*
@@ -34,6 +35,10 @@ class DetailQuestionnaireFragment : Fragment() {
             bundle.putSerializable(
                 "QuestionnaireModelChat",
                 requireArguments().getSerializable("QuestionnaireModelItem") as QuestionnaireModel
+            )
+            (requireActivity() as MainActivity).navController.navigate(
+                R.id.action_detailQuestionnaireFragment_to_chatFragment,
+                bundle
             )
         }
 
