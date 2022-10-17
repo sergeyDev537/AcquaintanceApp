@@ -26,5 +26,10 @@ class MainActivity : AppCompatActivity() {
             menu_yellow.close(true)
         }
 
+        fabSend.setOnClickListener {
+            navController.navigate(R.id.sendFragment)
+            menu_yellow.close(true)
+        }
+
     }
 }

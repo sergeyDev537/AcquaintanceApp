@@ -52,6 +52,16 @@ class AcquaintanceViewModel(application: Application): AndroidViewModel(applicat
         asyncInt.execute(mutableMapOf<String, String>())
     }
 
+    fun sendAbuse(name: String, theme: String, message: String){
+        val asyncAcquaintanceAbuse =
+            GetQuestionnaireAcquaintanceAppSend(
+                name,
+                theme,
+                message
+            )
+        asyncAcquaintanceAbuse.execute(mutableMapOf<String, String>())
+    }
+
     fun getListChatUser(questionnaireModel: QuestionnaireModel): LiveData<ChatUserModel>?{
         if (listChatUser == null) {
             listChatUser = MutableLiveData()
