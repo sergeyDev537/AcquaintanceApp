@@ -23,7 +23,6 @@ import androidx.core.text.HtmlCompat
 import com.most4dev.acquaintanceapp.managers.*
 import androidx.lifecycle.ViewModelProvider
 import com.most4dev.acquaintanceapp.Config
-import com.most4dev.acquaintanceapp.MainActivity
 import com.most4dev.acquaintanceapp.utils.snackBar
 import com.most4dev.acquaintanceapp.viewModels.AcquaintanceViewModel
 

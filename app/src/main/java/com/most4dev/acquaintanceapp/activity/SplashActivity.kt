@@ -36,9 +36,18 @@ class SplashActivity : AppCompatActivity() {
     fun checkRegister(){
         sharedPreferenceManager = SharedPreferenceManager(this)
         if (sharedPreferenceManager.getCompleteRegister()){
-            acquaintanceViewModel.getWebViewLoad().observe(this, {
+            acquaintanceViewModel.getWebViewLoad().observe(this) {
+                if (!it) {
 
-            })
+                } else {
+                    startActivity(
+                        Intent(
+                            this,
+                            MainActivity::class.java
+                        )
+                    )
+                }
+            }
         }
         else{
             startActivity(
